@@ -1,70 +1,82 @@
-/* Set the font family and background color for the entire page */
+/* Global styles */
+html {
+  font-size: 16px;
+}
+
 body {
-  font-family: Roboto, sans-serif;
-  background-color: #1A233F;
-  color: #fff;
-}
-
-/* Center the header text and style the navigation links */
-header {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fdf1d4;
+  color: #4b4b4b;
   text-align: center;
-  background-color: #5F7D8A;
-  color: #fff;
-  padding: 1em;
 }
 
-nav ul {
+a {
+  text-decoration: none;
+  color: #ffaa5d;
+}
+
+/* Header styles */
+header {
+  background-color: #e79d5e;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
 }
 
-nav li {
-  display: inline-block;
-  margin: 0 0.5em;
+header nav li {
+  margin: 0 1rem;
 }
 
-nav a {
-  color: #fff;
-  text-decoration: none;
-  padding: 0.5em;
-}
-
-nav a:hover {
-  background-color: #1E5EA1;
-  color: #fff;
-}
-
-/* Style the main content */
+/* Main content styles */
 main {
-  margin: 15em;
-  background-color: #9B7CC9;
-  padding: 2em;
+  padding: 2rem;
 }
 
-/* Style the headings and lists */
-h1, h2, h3 {
-  font-weight: normal;
-  margin-top: 2em;
-  margin-bottom: 0.5em;
-  color: #fff;
-}
-
-ul {
-  list-style: disc;
-  margin-left: 15em;
-  margin-bottom: 1em;
-}
-
-li {
-  margin: 0.5em 0;
-}
-
-/* Style the footer */
-footer {
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
   text-align: center;
-  margin-top: 2em;
-  padding: 1em;
-  background-color: #6F2DA8;
-  color: #fff;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Footer styles */
+footer {
+  background-color: #e79d5e;
+  color: white;
+  padding: 1rem;
 }
