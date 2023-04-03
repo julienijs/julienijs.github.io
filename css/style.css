@@ -1,19 +1,16 @@
-/* Global styles */
+/* Set the font family and background color for the entire page */
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-header {
-  background-color: #333;
+  background-color: #1A233F;
   color: #fff;
-  padding: 1rem;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 2rem;
+/* Center the header text and style the navigation links */
+header {
+  text-align: center;
+  background-color: #5F7D8A;
+  color: #fff;
+  padding: 1em;
 }
 
 nav ul {
@@ -22,47 +19,52 @@ nav ul {
   padding: 0;
 }
 
-nav ul li {
+nav li {
   display: inline-block;
-  margin-right: 1rem;
+  margin: 0 0.5em;
 }
 
-nav ul li:last-child {
-  margin-right: 0;
-}
-
-nav ul li a {
+nav a {
   color: #fff;
   text-decoration: none;
+  padding: 0.5em;
 }
 
-nav ul li a:hover {
-  text-decoration: underline;
+nav a:hover {
+  background-color: #1E5EA1;
+  color: #fff;
 }
 
+/* Style the main content */
 main {
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 0 1rem;
+  margin: 1em;
+  background-color: #9B7CC9;
+  padding: 2em;
 }
 
-section {
-  margin: 2rem 0;
+/* Style the headings and lists */
+h1, h2, h3 {
+  font-weight: normal;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  color: #fff;
 }
 
-section h2 {
-  margin-top: 0;
+ul {
+  list-style: disc;
+  margin-left: 2em;
+  margin-bottom: 1em;
 }
 
-/* Responsive styles */
-@media screen and (max-width: 600px) {
-  nav ul li {
-    display: block;
-    margin-right: 0;
-    margin-bottom: 1rem;
-  }
+li {
+  margin: 0.5em 0;
+}
 
-  nav ul li:last-child {
-    margin-bottom: 0;
-  }
+/* Style the footer */
+footer {
+  text-align: center;
+  margin-top: 2em;
+  padding: 1em;
+  background-color: #6F2DA8;
+  color: #fff;
 }
