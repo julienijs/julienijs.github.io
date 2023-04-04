@@ -1,14 +1,14 @@
 /* Set the font family and background color for the entire page */
 body {
   font-family: Arvo, sans-serif;
-  background-color: #f78702;
+  background-color: #fda172;
 }
 
 /* Center the header text and style the navigation links */
 header {
   text-align: center;
-  background-color: #333;
-  color: #fbceb1;
+  background-color: #f78702;
+  color: #f78702;
   padding: 1em;
 }
 
