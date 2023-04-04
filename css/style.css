@@ -64,3 +64,14 @@ footer {
   background-color: #333;
   color: #fff;
 }
+
+/* Style button */
+button {
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
