@@ -67,11 +67,11 @@ footer {
 
 /* Style button */
 button {
-  background-color: blue;
-  color: white;
+  background-color: white;
+  color: black;
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
   font-size: 16px;
-  font-family: Arial, sans-serif;
+  font-family: Arvo, sans-serif;
 }
