@@ -4,18 +4,32 @@ body {
   background-color: #fda172;
 }
 
+/* Style links */
+a {
+  color: black;
+}
+
+a: link {
+  color: black;
+}
+
+a:hover {
+  color: white;
+}
+
+/* Style sections */
+section {
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
 /* Center the header text and style the navigation links */
 header {
   text-align: center;
   background-color: #f78702;
   color: #fff;
   padding: 1em;
-}
-
-section {
-  border: 2px solid black;
-  border-radius: 10px;
-  margin-bottom: 30px;
 }
 
 nav ul {
