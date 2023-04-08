@@ -19,7 +19,7 @@ a:hover {
 
 /* Style sections */
 section {
-  border: 2px solid blaxk;
+  border: 2px solid black;
   border-radius: 10px;
   margin-bottom: 20px;
   padding-top: 30px;
@@ -90,7 +90,7 @@ footer {
 /* Style button */
 button {
   align-items: center;
-  background-color: #white;
+  background-color: white;
   border: 1px solid #111;
   border-radius: 8px;
   box-sizing: border-box;
