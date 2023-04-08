@@ -22,6 +22,8 @@ section {
   border: 2px solid black;
   border-radius: 10px;
   margin-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 50xp;
 }
 
 /* Center the header text and style the navigation links */
