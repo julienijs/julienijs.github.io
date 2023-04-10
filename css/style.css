@@ -4,27 +4,11 @@ body {
   background-color: #acdcad;
 }
 
-/* Style links */
-a {
-  color: black;
+main {
+  max-width: 1200px;
+  margin: 0 auto; /* this will center the element horizontally */
 }
 
-a: link {
-  color: black;
-}
-
-a:hover {
-  color: white;
-}
-
-/* Style sections */
-section {
-  border: 2px solid black;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  padding-top: 30px;
-  padding-bottom: 50xp;
-}
 
 /* Center the header text and style the navigation links */
 header {
@@ -56,18 +40,34 @@ nav a:hover {
   color: #333;
 }
 
-/* Style the main content */
-main {
-  margin: 1em;
+current {
+  background-color: #ddd;
+  color: #333;
 }
 
-/* Style the headings and lists */
-h1, h2, h3 {
-  font-weight: normal;
-  margin-top: 2em;
-  margin-bottom: 0.5em;
+
+
+a {
+  color: black;
 }
 
+a:hover {
+  color: white;
+}
+
+/* Style sections */
+section {
+  border: 1px solid #000;
+  margin-left: auto;
+  border-radius: 20px;
+  padding: 1.5em;
+  background: #f6f6f6;
+  margin: 2em;
+}
+
+
+
+/* Style lists */
 ul {
   list-style: disc;
   margin-left: 2em;
@@ -140,8 +140,35 @@ button:hover {
   outline: 0;
 }
 
+
+.project {
+  display: grid;
+  grid-template-columns: 60% 38%;
+  grid-template-rows: auto;
+  gap: 0 25px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "projectText projectImage";
+}
+
+.projectText {
+  grid-area: projectText;
+}
+
+.projectImage {
+  justify-self: end;
+  align-self: center;
+  grid-area: projectImage;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+
+
+
 @media (min-width: 768px) {
-  .button-56 {
+  button {
     padding: 0 40px;
   }
 }
