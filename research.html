@@ -10,6 +10,9 @@
     <header id="header"></header>
     <script src="header.js"></script>
     <main>
+      
+      <button onclick="topFunction()" id="TopBtn" title="Go to top">&lt;</button>
+
       <section class="project">
         <div class="projectText">
           <h2>The predictability of language change</h2>
@@ -73,6 +76,108 @@
         </form>
       </section>
 
+      <script>
+        /* Foto View */
+const lightbox = document.createElement('div')
+lightbox.id = 'lightbox'
+document.body.appendChild(lightbox)
+
+const images = document.querySelectorAll('img')
+images.forEach(image => {
+    image.addEventListener('click', e => {
+        lightbox.classList.add('active')
+        const img = document.createElement('img')
+        img.src = image.src
+        while (lightbox.firstChild) {
+            lightbox.removeChild(lightbox.firstChild)
+        }
+        lightbox.appendChild(img)
+    })
+})
+
+lightbox.addEventListener('click', e => {
+    if (e.target !== e.currentTarget) return
+    lightbox.classList.remove('active')
+})
+
+
+/* Go To Top Knop */
+mybutton = document.getElementById("TopBtn");
+
+window.onscroll = function () { scrollFunction() };
+function scrollFunction() {
+    if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+}
+
+function topFunction() {
+    document.body.scrollTop = 0; // voor Safari
+    document.documentElement.scrollTop = 0; // voor Chrome, Firefox, IE en Opera
+}
+
+
+      </script>
+      <style>
+        /* Vergroote foto */
+#lightbox {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+}
+
+#lightbox.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lightbox img {
+    max-width: 90%;
+    max-height: 80%;
+    padding: 4px;
+    background-color: #000000;
+    border: 2px solid #ffffff;
+}
+
+
+        /* Naar boven knop */
+#TopBtn {
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    right: 35px;
+    z-index: 99;
+    background-color: #2e2e2e;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 15px;
+    border: 2px solid #ffffff;
+    font-size: 35px;
+    transform: rotate(90deg);
+}
+
+#TopBtn:hover {
+    background-color: #9e021a;
+    animation: shake 0.2s;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(90deg); }
+    20% { transform: translate(-1px, -2px) rotate(89deg); }
+    40% { transform: translate(-3px, 0px) rotate(91deg); }
+    60% { transform: translate(3px, 2px) rotate(90deg); }
+    80% { transform: translate(1px, -1px) rotate(91deg); }
+    100% { transform: translate(1px, 1px) rotate(90deg); }
+}
+      </style>
     </main>
   </body>
 </html>
